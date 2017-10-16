@@ -31,7 +31,7 @@ header {
     top:0;
     right:0;
     line-height:45px;
-    padding:10px 16px 0px 20px;
+    padding:5px 15px 0px 15px;
     color:#999;
     border:0;
     font-size:1.4em;
@@ -46,7 +46,7 @@ header {
     position:absolute;
     top:0px;
     right:0;
-    padding:0px 14px 0px 14px;
+    padding:7px 15px 0px 15px;
     color:#999;
     border:0;
     font-size:2em;
