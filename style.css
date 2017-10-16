@@ -10,12 +10,14 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
-#welcome {
-    font-family: 'Lora', serif;
+#welcome{
     font-size: 2em;
 }
 
 header {
+    /* position: fixed; */
+    font-family: 'Lora', serif;
+    text-align: center;
     width:100%;
     background:#ffffff;
     height:60px;
@@ -29,7 +31,7 @@ header {
     top:0;
     right:0;
     line-height:45px;
-    padding:5px 15px 0px 15px;
+    padding:10px 16px 0px 20px;
     color:#999;
     border:0;
     font-size:1.4em;
@@ -44,10 +46,10 @@ header {
     position:absolute;
     top:0px;
     right:0;
-    padding:7px 15px 0px 15px;
+    padding:0px 14px 0px 14px;
     color:#999;
     border:0;
-    font-size:3em;
+    font-size:2em;
     line-height:65px;
     font-weight:bold;
     cursor:pointer;
@@ -56,6 +58,7 @@ header {
 }
 
 .menu {
+    padding: 20px;
     z-index:1000000;
     font-weight:bold;
     font-size:0.8em;
@@ -125,3 +128,15 @@ span {
 a {
     color:#336699;
 }
+
+footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    background-color: #efefef;
+    text-align: center;
+    font-size: 0.5em;
+    width: 100%
+  }
