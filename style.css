@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Lora|Montserrat|Roboto+Slab');
+
+body {
+    background: #dbc1ac
+}
+
+#welcome{
+    font-family: Lora;
+    font-size: 2em;
+    text-align: center;
+    opacity: 1;
+
+}
+
