@@ -1,0 +1,10 @@
+.products {
+    text-align: center;
+}
+
+.products img{
+    border-radius: 70px;
+    padding: 30px;
+    height: 400px; 
+    width: 500px;
+}
