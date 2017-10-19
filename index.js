@@ -14,3 +14,19 @@ $(document).ready(function() {
         });
     });
 });
+
+/* $(function() {
+    $('#gif-hover').hide();
+    $('#hover').on("mouseover", function() {
+      $('#hover').hide();
+      $('#gif-hover').show();
+      $('#pic-hover').hide();
+    });
+
+    $('#gif-hover').on("mouseout", function() {
+      $('#hover').show();
+      $('#gif-hover').hide();
+      $('#pic-hover').show();
+    });
+});
+ */
