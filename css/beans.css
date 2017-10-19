@@ -1,0 +1,15 @@
+.content{
+    margin: 50px;
+    text-align: center;
+}
+
+.content img{
+    padding: 30px;
+    border-radius: 50px;
+}
+
+hr{
+    border-width: 3px;
+    width: 50%;
+    border-color: #96714b;
+}
