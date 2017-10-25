@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./css/index.css">
     <title>Coffee &amp; Love</title>
 </head>
 <body>
@@ -21,22 +21,54 @@
             <a href="#"><li>Home</li></a>
             <a href="./beans.html"><li>Coffee Beans</li></a>
             <a href="./brewing.html"><li>Brewing Equipment</li></a>
-            <a href="./about.html"><li>About <em>Coffee &amp; Love</li></a>
+            <a href="./about.html"><li><em>About Coffee &amp; Love</em></li></a>
             </ul>
         </div>
     </div>
-
-    <div class="container">
-        <img id="image" src="./img/espresso-press.png" />
-        <div class="overlay">
-            <img id="text" src="./img/espresso-press.gif" />
+    
+    <div class="body-content" style="padding: 0 0 1.5em 0">
+    <div class="parallax" style="background-image: url(./img/bg/bgcoffee.jpg)";></div>
+        
+    <div id="banner">
+        <video autoplay loop width="100%" height="100%">
+            <source src="img/bg/coffeebanner.mp4" type="video/mp4"/>
+        </video>
+    </div>
+    
+    <div class="content group beans">
+        <div class="col col-span1" id="coffeebean1">
+            <img src="./img/index/coffeebean1.jpg"> 
+        </div>
+        <div class="col col-span2">
+            <img class="slides" src="./img/index/coffeebean2.jpg">
+            <img class="slides" src="./img/index/coffeebean3.jpg">
+            <img class="slides" src="./img/index/coffeebean4.jpg">    
+        </div>
+        <div class="col col-span3">
+            <h3>Our Coffee Beans</h3>
+            <p>Our beans are specially hand-picked for its distictive flavour and aroma, carefully roasted to perfection, and ground to the perfect consistency to create the perfect cup that our customers have grown to love.</p>
         </div>
     </div>
-
-    <div>
+        
+    <div id="banner2">
+        <img src="img/index/banner2.png">    
     </div>
-
-    <div>
+    
+    <div class="content group brewing">
+        <div class="col col-span1" id="coffeebean1">
+            <h3>Brewing Equipment</h3>
+            <p>fdjkgjfdhjg</p>
+        </div>
+        <div class="col col-span2">
+            <img src="img/index/equip1.jpg">
+        </div>
+        <div class="col col-span3">
+            <h3>Our Coffee Beans</h3>
+            <p>Our beans are specially hand-picked for its distictive flavour and aroma, carefully roasted to perfection, and ground to the perfect consistency to create the perfect cup that our customers have grown to love.</p>
+        </div>
+    </div>
+        
+    <div><!--footer-->
         <footer>
             &copy; Ngu Chee Hong, Ang Xin-Yean and Navin Gunna A/L Saegren. Created for WEB1201.<br>
             More information <a href="./about.html">here.</a>
@@ -45,5 +77,6 @@
 
     <script src="./scripts/jquery-3.2.1.min.js"></script>
     <script src="./index.js"></script>
+
 </body>
 </html>

@@ -13,7 +13,7 @@ body {
 }
 
 header {
-    /* position: fixed; */
+/*     position: fixed; */
     font-family: 'Lora', serif;
     text-align: center;
     width:100%;
@@ -132,41 +132,9 @@ footer {
     right: 0;
     bottom: 0;
     left: 0;
-    padding: 1rem;
+    padding: 1.5em;
     background-color: #efefef;
     text-align: center;
     font-size: 0.5em;
     width: 100%
-}
-
-.container {
-    position: absolute;
-}
-
-.image {
-    /* display: absolute; */
-    display: block;
-    max-width: 20%;
-    max-height: 20%;
-    width: auto;
-    height: auto;
-}
-
-.overlay {
-    display: block;
-    max-width: 20%;
-    max-height: 20%;
-    width: auto;
-    height: auto;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 15px;
-    right: 0;
-    opacity: 0;
-}
-
-.container:hover .overlay {
-    opacity: 1;
-    animation-play-state: initial;
 }
