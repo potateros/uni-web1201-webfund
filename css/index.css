@@ -75,6 +75,15 @@
     z-index: 1;
 }
 
+#subscribe{
+    text-align: center;
+    margin-bottom: 3em;
+    font-family: Lora;
+}
+
+#subscribe button{
+    font-family: Lora;
+}
 /*.container {
     position: absolute;
 }
