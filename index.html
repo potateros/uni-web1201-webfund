@@ -1,13 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+<!--
+    TO-DO
+- Fix the window resizing issue with fonts
+- Clean up all in-line CSS into external (if possible)
+
+ -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/index.css">
     <title>Coffee &amp; Love</title>
 </head>
+
 <body>
     <div>
         <header>
@@ -18,24 +25,24 @@
 
         <div class="menu">
             <ul>
-            <a href="#"><li>Home</li></a>
-            <a href="./beans.html"><li>Coffee Beans</li></a>
-            <a href="./brewing.html"><li>Brewing Equipment</li></a>
-            <a href="./about.html"><li><em>About Coffee &amp; Love</em></li></a>
+                <a href="#"><li>Home</li></a>
+                <a href="./beans.html"><li>Coffee Beans</li></a>
+                <a href="./brewing.html"><li>Brewing Equipment</li></a>
+                <a href="./about.html"><li>About <em>Coffee &amp; Love</em></li></a>
             </ul>
         </div>
     </div>
 
-    <div class="body-content" style="padding: 0 0 1.5em 0"></div>
-    <div class="parallax" style="background-image: url(./img/bg/bgcoffee.jpg)";></div>
+    <div class="body-content"></div>
+    <div class="parallax" style="background-image: url(./img/bg/bgcoffee.jpg)"></div>
 
     <div id="banner">
         <video autoplay loop width="100%" height="100%">
-            <source src="./img/bg/coffeebanner.mp4" type="video/mp4"/>
+            <source src="./img/bg/coffeebanner.mp4" type="video/mp4" />
         </video>
     </div>
 
-    <div class="content group beans">
+    <div class="content group">
         <div class="col col-span1" id="coffeebean1">
             <img src="./img/index/coffeebean1.jpg">
         </div>
@@ -54,7 +61,7 @@
         <img src="./img/index/banner2.png">
     </div>
 
-    <div class="content group brewing">
+    <div class="content group">
         <div class="col col-span1" id="desc-text">
             <h3>Brewing Equipment</h3>
             <p>Explore our range of premium and affordable brewing equipment, guaranteed to brew a better cup.</p>
@@ -69,24 +76,30 @@
 
     <div id="subscribe">
         <form>
-            <p>Sign up for our newsletter!<br></p>
-            Email: <input type="text" name="email" id="email">
+            <p>Sign up for our newsletter!
+                <br>
+            </p>
+            Email:
+            <input type="text" name="email" id="email">
             <button>Submit</button>
         </form>
     </div>
 
     <div>
         <footer>
-            &copy; Ngu Chee Hong, Ang Xin-Yean and Navin Gunna A/L Saegren. Created for WEB1201.<br>
-            More information <a href="./about.html">here.</a>
+            &copy; Ngu Chee Hong, Ang Xin-Yean and Navin Gunna A/L Saegren. Created for WEB1201.
+            <br> More information
+            <a href="./about.html">here.</a>
         </footer>
     </div>
 
-    <script src="./scripts/jquery-3.2.1.min.js"></script>
-    <script src="./index.js"></script>
-    <audio autoplay>
-        <source src="./audio/background.ogg" type="audio/ogg">
-        Your browser does not support the audio tag.
+    <script src="./js/jquery-3.2.1.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/index.js"></script>
+
+    <audio autoplay loop>
+        <source src="./audio/background.ogg" type="audio/ogg"> Your browser does not support the audio tag.
     </audio>
 </body>
+
 </html>
