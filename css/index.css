@@ -3,7 +3,7 @@
     background-image: url("./img/bg/bgcoffee.jpg");
     max-width: 100%;
     max-height: 100%;
-    min-height: 700px; 
+    min-height: 700px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -47,11 +47,50 @@
 .group { zoom:1; /* For IE 6/7 */ }
 
 @media only screen and (max-width: 480px){
-   .col{  
-       margin: 1% 0 1% 0%; 
+   .col{
+       margin: 1% 0 1% 0%;
     }
    .col-span3, .col-span2, .col-span1{
-       width: 100%; 
+       width: 100%;
+    }
+    #desc-text{
+        line-height: 2em !important;
+        font-size: 1em;
+    }
+    #desc-text h3{
+        line-height: 2em !important;
+        margin-top: 0% !important;
+        margin-bottom: 0% !important;
+    }
+}
+
+@media only screen and (max-width: 720px){
+    #banner{
+        margin-left: -300px;
+        margin-right: -300px;
+    }
+    #banner2{
+        margin-left: -300px;
+        margin-right: -300px;
+    }
+    #desc-text{
+        line-height: 1em;
+        font-size: 1em;
+    }
+    #desc-text h3{
+        line-height: 1em;
+        margin-top: -10%;
+        margin-bottom: -5%;
+    }
+}
+@media only screen and (max-width: 768px){
+    #banner{
+        margin-left: -200px;
+        margin-right: -200px;
+    }
+    #banner2{
+        margin-left: -150px;
+        margin-right: -150px;
     }
 }
 
@@ -81,34 +120,4 @@
 #subscribe button{
     font-family: Lora;
 }
-/*.container {
-    position: absolute;
-}
 
-.image {
-     display: absolute; 
-    display: block;
-    max-width: 20%;
-    max-height: 20%;
-    width: auto;
-    height: auto;
-}
-
-.overlay {
-    display: block;
-    max-width: 20%;
-    max-height: 20%;
-    width: auto;
-    height: auto;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 15px;
-    right: 0;
-    opacity: 0;
-}
-
-.container:hover .overlay {
-    opacity: 1;
-    animation-play-state: initial;
-}*/

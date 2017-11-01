@@ -54,11 +54,11 @@ h1{
 .group { zoom:1; /* For IE 6/7 */ }
 
 @media only screen and (max-width: 480px){
-   .col{  
-       margin: 1% 0 1% 0%; 
+   .col{
+       margin: 1% 0 1% 0%;
     }
     .col-span2, .col-span1{
-        width: 100%; 
+        width: 100%;
     }
 }
 
@@ -71,8 +71,28 @@ h1{
     color:  #BCABAE;
 }
 
+#coffeebeans1:hover img{
+    transition: transform 0.5s ease-in-out;
+    transform: scale(1.2);
+    position: relative;
+    z-index: 1;
+}
 
-/* Clear floats after the columns 
+#coffeebeans2:hover img{
+    transition: transform 0.5s ease-in-out;
+    transform: scale(1.2);
+    position: relative;
+    z-index: 1;
+}
+
+#coffeebeans3:hover img{
+    transition: transform 0.5s ease-in-out;
+    transform: scale(1.2);
+    position: relative;
+    z-index: 1;
+}
+
+/* Clear floats after the columns
 .row:after {
     content: "";
     display: table;
