@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/cart.css">
+    <title>Coffee &amp; Love</title>
+</head>
+
+<body>
+    <div>
+        <header>
+            <span id="welcome">
+                <em>Your Shopping Cart</em>
+            </span>
+            <button class="hamburger">&#9776;</button>
+            <button class="cross">&#735;</button>
+        </header>
+
+        <div class="menu">
+            <ul>
+                <a href="./index.html"><li>Home</li></a>
+                <a href="./beans.html"><li>Coffee Beans</li></a>
+                <a href="./brewing.html"><li>Brewing Equipment</li></a>
+                <a href="#"><li>Shopping Cart</li></a>
+                <a href="./about.html"><li>About<em>Coffee &amp; Love</em></li></a>
+            </ul>
+        </div>
+    </div>
+
+    <div>
+        <div id="content">
+            <form id="shopping-cart" action="cart.html" method="post">
+                <table class="shopping-cart">
+                    <thead>
+                        <tr>
+                            <th scope="col">Item</th>
+                            <th scope="col">Qty</th>
+                            <th scope="col" colspan="2">Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+                <p id="sub-total">
+                    <strong>Sub Total</strong>:
+                    <span id="stotal"></span>
+                </p>
+                <ul id="shopping-cart-actions">
+                    <li>
+                        <input type="submit" name="update" id="update-cart" class="btn" value="Update Cart" />
+                    </li>
+                    <li>
+                        <input type="submit" name="delete" id="empty-cart" class="btn" value="Empty Cart" />
+                    </li>
+                    <li>
+                        <a href="index.html" class="btn">Continue Shopping</a>
+                    </li>
+                    <li>
+                        <a href="checkout.html" class="btn">Go To Checkout</a>
+                    </li>
+                </ul>
+            </form>
+        </div>
+
+        <div>
+            <footer>
+                &copy; Ngu Chee Hong, Ang Xin-Yean and Navin Gunna A/L Saegren. Created for WEB1201.
+                <br> More information
+                <a href="./about.html">here.</a>
+            </footer>
+        </div>
+
+        <script src="./js/jquery-3.2.1.min.js"></script>
+        <script src="./js/main.js"></script>
+        <script src="./js/shopping.js"></script>
+
+        <audio autoplay loop>
+            <source src="./audio/background.ogg" type="audio/ogg"> Your browser does not support the audio tag.
+        </audio>
+
+</body>
+
+</html>

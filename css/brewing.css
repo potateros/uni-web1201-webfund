@@ -40,11 +40,11 @@
 .group { zoom:1; /* For IE 6/7 */ }
 
 @media only screen and (max-width: 480px){
-   .col{  
-       margin: 1% 0 1% 0%; 
+   .col{
+       margin: 1% 0 1% 0%;
     }
    .col-span4, .col-span3, .col-span2, .col-span1{
-       width: 100%; 
+       width: 100%;
     }
 }
 
@@ -78,7 +78,7 @@ h1{
 
 .column h2{
     text-align: center;
-    padding-bottom: 5%; 
+    padding-bottom: 5%;
 }
 
 .column:first-child{
@@ -91,11 +91,11 @@ h1{
 .group { zoom:1; /* For IE 6/7 */ }
 
 @media only screen and (max-width: 480px){
-   .col{  
-       margin: 1% 0 1% 0%; 
+   .col{
+       margin: 1% 0 1% 0%;
     }
     .span2, .span1{
-        width: 100%; 
+        width: 100%;
     }
 }
 

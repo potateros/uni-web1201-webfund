@@ -135,3 +135,32 @@ span {
 a {
     color:#336699;
 }
+
+.btn, a.btn {
+    display: block;
+    font-family: 'Lora', 'Arial', 'Helvetica', sans-serif;
+    font-size: 0.8em;
+    width: 15em;
+    margin: 1em;
+    padding: 10px;
+    color: #000;
+    background-color: #BCABAE;
+    border: none;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    letter-spacing: 0.1em;
+}
+
+.btn:hover {
+    display: block;
+    font-family: 'Lora', 'Arial', 'Helvetica', sans-serif;
+    font-size: 0.8em;
+    background-color: white;
+    color: #000;
+    border: 2px solid #BCABAE;
+    text-decoration: none;
+    text-align: center;
+}
