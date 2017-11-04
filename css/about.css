@@ -1,6 +1,74 @@
-.map {
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 3fr));
+    grid-gap: 10px;
+    grid-auto-rows: repeat(minmax(100px, auto));
+    padding: 6% 10%;
+}
+
+.box {
+    font-size: 150%;
+}
+
+.box img{
+    border-radius: 10%;
+}
+
+#eric{
+    grid-column: 1;
+    grid-row: 1;
+}
+
+#eric img{
+    width: 100%;
+}
+
+#yean{
+    grid-column: 2;
+    grid-row: 1;
+}
+
+#yean img{
+    width: 100%;
+}
+
+#navin{
+    grid-column: 3;
+    grid-row: 1;
+}
+
+#navin img{
+    width: 100%;
+}
+
+figure{
+    border-radius: 5%;
+    background-color: rgb(247, 247, 247);
+    padding: 5%;
+}
+
+figcaption{
+    font-size: 0.6em;
     text-align: center;
-    padding: 20% 0 0 0;
+    color: #444;
+}
+
+@media only screen and (max-width: 720px){
+    .wrapper{
+        display: block;
+    }
+
+    figure{
+        margin: 0 auto;
+        padding: 5% 0;
+        width: 50%;
+    }
+}
+
+.map {
+    display: block;
+    text-align: center;
+    padding: 10% 0 0 0;
 }
 
 iframe {

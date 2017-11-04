@@ -8,9 +8,9 @@
 		init: function () {
 
 			// Properties
-			this.cartPrefix = "winery-"; // Prefix string to be prepended to the cart's name in the session storage
+			this.cartPrefix = "coffee-"; // Prefix string to be prepended to the cart's name in the session storage
 			this.cartName = this.cartPrefix + "cart"; // Cart name in the session storage
-			this.shippingRates = this.cartPrefix + "shipping-rates"; // Shipping rates key in the session storage
+			// this.shippingRates = this.cartPrefix + "shipping-rates"; // Shipping rates key in the session storage
 			this.total = this.cartPrefix + "total"; // Total key in the session storage
 			this.storage = sessionStorage; // shortcut to the sessionStorage object
 
@@ -18,7 +18,7 @@
 			this.$formCart = this.$element.find("#shopping-cart"); // Shopping cart form
 			this.$checkoutCart = this.$element.find("#checkout-cart"); // Checkout form cart
 			this.$checkoutOrderForm = this.$element.find("#checkout-order-form"); // Checkout user details form
-			this.$shipping = this.$element.find("#sshipping"); // Element that displays the shipping rates
+			// this.$shipping = this.$element.find("#sshipping"); // Element that displays the shipping rates
 			this.$subTotal = this.$element.find("#stotal"); // Element that displays the subtotal charges
 			this.$shoppingCartActions = this.$element.find("#shopping-cart-actions"); // Cart actions links
 			this.$updateCartBtn = this.$shoppingCartActions.find("#update-cart"); // Update cart button
@@ -55,7 +55,7 @@
 				cart.items = [];
 
 				this.storage.setItem(this.cartName, this._toJSONString(cart));
-				this.storage.setItem(this.shippingRates, "0");
+				// this.storage.setItem(this.shippingRates, "0");
 				this.storage.setItem(this.total, "0");
 			}
 		},
@@ -122,7 +122,7 @@
 					}
 
 					self.storage.setItem(self.total, self._convertNumber(updatedTotal));
-					self.storage.setItem(self.shippingRates, self._convertNumber(self._calculateShipping(totalQty)));
+					// self.storage.setItem(self.shippingRates, self._convertNumber(self._calculateShipping(totalQty)));
 
 					self.storage.setItem(self.cartName, self._toJSONString(updatedCart));
 					$(this).parents("tr").remove();
@@ -181,7 +181,7 @@
 
 				if (cartItems.length > 0) {
 					var cartTotal = this.storage.getItem(this.total);
-					var cartShipping = this.storage.getItem(this.shippingRates);
+					// var cartShipping = this.storage.getItem(this.shippingRates);
 					var subTot = this._convertString(cartTotal) + this._convertString(cartShipping);
 
 					this.$subTotal[0].innerHTML = this.currency + " " + this._convertNumber(subTot);
@@ -214,7 +214,7 @@
 				self.$updateCartBtn.on("click", function () {
 					var $rows = self.$formCart.find("tbody tr");
 					var cart = self.storage.getItem(self.cartName);
-					var shippingRates = self.storage.getItem(self.shippingRates);
+					// var shippingRates = self.storage.getItem(self.shippingRates);
 					var total = self.storage.getItem(self.total);
 
 					var updatedTotal = 0;
@@ -242,7 +242,7 @@
 					});
 
 					self.storage.setItem(self.total, self._convertNumber(updatedTotal));
-					self.storage.setItem(self.shippingRates, self._convertNumber(self._calculateShipping(totalQty)));
+					// self.storage.setItem(self.shippingRates, self._convertNumber(self._calculateShipping(totalQty)));
 					self.storage.setItem(self.cartName, self._toJSONString(updatedCart));
 
 				});
@@ -269,11 +269,11 @@
 						price: price,
 						qty: qty
 					});
-					var shipping = self._convertString(self.storage.getItem(self.shippingRates));
-					var shippingRates = self._calculateShipping(qty);
-					var totalShipping = shipping + shippingRates;
+					// var shipping = self._convertString(self.storage.getItem(self.shippingRates));
+					// var shippingRates = self._calculateShipping(qty);
+					// var totalShipping = shipping + shippingRates;
 
-					self.storage.setItem(self.shippingRates, totalShipping);
+					// self.storage.setItem(self.shippingRates, totalShipping);
 				});
 			});
 		},
