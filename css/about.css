@@ -1,9 +1,19 @@
-.wrapper {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 3fr));
-    grid-gap: 10px;
-    grid-auto-rows: repeat(minmax(100px, auto));
-    padding: 0 5%;
+@supports not (display:grid){
+    .wrapper{
+        padding: 0 5%;
+        width: 35%;
+        padding-left: 35%;
+    }
+}
+
+@supports (display: grid){
+    .wrapper {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 3fr));
+        grid-gap: 10px;
+        grid-auto-rows: repeat(minmax(100px, auto));
+        padding: 0 5%;
+    }
 }
 
 .box {

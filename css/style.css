@@ -25,11 +25,11 @@ header {
 }
 
 footer {
-    position: fixed;
+    position: relative;
     right: 0;
     bottom: 0;
     left: 0;
-    padding: 1.5em;
+    padding: 1.5em 0;
     background-color: #efefef;
     text-align: center;
     font-size: 0.8em;
@@ -140,12 +140,12 @@ a {
     display: block;
     font-family: 'Lora', 'Arial', 'Helvetica', sans-serif;
     font-size: 0.8em;
-    width: 15em;
+    width: 12em;
     margin: 1em;
     padding: 10px;
     color: #000;
     background-color: #BCABAE;
-    border: none;
+    border: 2px solid #BCABAE;
     transition-duration: 0.4s;
     cursor: pointer;
     text-transform: uppercase;
@@ -160,6 +160,7 @@ a {
     font-size: 0.8em;
     background-color: white;
     color: #000;
+    width: 12em;
     border: 2px solid #BCABAE;
     text-decoration: none;
     text-align: center;
