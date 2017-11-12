@@ -26,6 +26,7 @@
                 <a href="../index.html"><li>Home</li></a>
                 <a href="../beans.html"><li>Coffee Beans</li></a>
                 <a href="../brewing.html"><li>Brewing Equipment</li></a>
+                <a href="../cart.html"><li>Shopping Cart</li></a>
                 <a href="../about.html"><li>About <em>Coffee &amp; Love</em></li></a>
             </ul>
         </div>
@@ -38,16 +39,16 @@
             </a>
         </div>
         <div class="col col-span2">
-            <h2>De'Longhi - EC155</h2>
+            <h2>De'Longhi Manual Espresso Machine</h2>
             <h4>RM890</h4>
             Quantity:
-            <select>
+            <select id="delong-select">
                 <option value="1">1</option>
                 <option value="2">2</option>
             </select>
             <br>
             <form>
-                <input type="submit" name="cart" class="btn" value="Add to cart">
+                <input type="submit" name="cart" class="btn" value="Add to cart" id="delong-submit" formaction="../cart.html">
             </form>
             <hr>
             <p>
@@ -81,7 +82,7 @@
 
     <script src="../js/jquery-3.2.1.min.js"></script>
     <script src="../js/main.js"></script>
-    <script src="../js/shopping.js"></script>
+    <script src="../js/cart.js"></script>
 
 </body>
 
