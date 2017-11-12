@@ -41,13 +41,13 @@
             <h2>Eight Cup Classic Chemex</h2>
             <h4>RM180</h4>
             Quantity:
-            <select>
+            <select id="chemex-select">
                 <option value="1">1</option>
                 <option value="2">2</option>
             </select>
             <br>
             <form>
-                <input type="submit" name="cart" class="btn" value="Add to cart">
+                <input type="submit" name="cart" class="btn" value="Add to cart" id="chemex-submit" formaction="../cart.html">
             </form>
             <hr>
             <p>
@@ -81,9 +81,6 @@
     <script src="../js/main.js"></script>
     <script src="../js/shopping.js"></script>
 
-    <audio autoplay loop>
-        <source src="../audio/background.ogg" type="audio/ogg"> Your browser does not support the audio tag.
-    </audio>
 </body>
 
 </html>

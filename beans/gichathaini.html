@@ -40,14 +40,17 @@
         <div class="col col-span2 product-description" data-name="Gichathaini" data-price="40">
             <h2 class="product-name">Gichathaini</h2>
             <h4 class="product-price">RM40 / 350g</h4>
-            <form class="add-to-cart">
-                <div>
-                    <label for="qty-1">Quantity</label>
-                    <input type="text" name="qty-1" id="qty-1" class="qty" value="1" />
-                </div>
-                <p>
-                    <input type="submit" value="Buy now" class="btn" />
-                </p>
+            Quantity:
+            <select id="gich-select">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+            <br>
+            <form>
+                <input type="submit" name="cart" class="btn" value="Buy now" id="gich-submit" formaction="../cart.html">
             </form>
             <hr>
             <p>
@@ -92,9 +95,6 @@
     <script src="../js/main.js"></script>
     <script src="../js/shopping.js"></script>
 
-    <audio autoplay loop>
-        <source src="../audio/background.ogg" type="audio/ogg"> Your browser does not support the audio tag.
-    </audio>
 </body>
 
 </html>
